@@ -1,0 +1,12 @@
+function solution(statues) {
+  var count = 0;
+  var sorted = statues.sort();
+  for (var i = 0; i < sorted.length - 1; i++) {
+    if (sorted[i + 1] - sorted[i] > 1) {
+      count += (sorted[i + 1] - sorted[i] - 1);
+    }
+  }
+  return count;
+}
+
+solution([6, 8, 2, 3]);
