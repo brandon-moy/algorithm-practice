@@ -1,0 +1,20 @@
+.hidden {
+  display: none !important;
+}
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.tester {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border-color: white;
+}
+
+.select {
+  background-color: red;
+}
