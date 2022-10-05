@@ -18,3 +18,9 @@
 .select {
   background-color: red;
 }
+
+.list-test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
