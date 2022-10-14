@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Simple Map</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <!-- playground-hide -->
+  <script>
+    const process = { env: {} };
+    process.env.GOOGLE_MAPS_API_KEY =
+      'AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg';
+  </script>
+  <!-- playground-hide-end -->
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script type="module" src="./index.js"></script>
 </head>
+
 <body>
-  <form>
-    <select class="tester">
-      <option class="select" value="1">One</option>
-      <option class="select" value="2">Two</option>
-      <option class="select" value="3">Three</option>
-      <option class="select" value="4">Four</option>
-    </select>
-    <input style="display:block">
-  </form>
-  <div class="number">
-    <h1 data-view="1">One</h1>
-    <h1 data-view="2" class="hidden">Two</h1>
-    <h1 data-view="3" class="hidden">Three</h1>
-    <h1 data-view="4" class="hidden">Four</h1>
-  </div>
-  <div class="list-test">
-    <a>One</a>
-    <a>Two</a>
-    <a>Three</a>
-    <a>Four</a>
-  </div>
-  <script src="main.js"></script>
+  <div id="map"></div>
+
+  <!--
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGgcallback=initMapv=weekly"
+    defer></script>
 </body>
+
 </html>

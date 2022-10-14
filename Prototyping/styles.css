@@ -1,26 +1,17 @@
-.hidden {
-  display: none !important;
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+#map {
+  height: 100%;
 }
 
-* {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.tester {
-  background-color: red;
-  color: white;
-  font-size: 2rem;
-  padding: 1rem;
-  border-radius: 0.25rem;
-  border-color: white;
-}
-
-.select {
-  background-color: red;
-}
-
-.list-test {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+/*
+ * Optional: Makes the sample page fill the window.
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
