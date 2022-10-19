@@ -2,32 +2,37 @@
 <html>
 
 <head>
-  <title>Simple Map</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <!-- playground-hide -->
-  <script>
-    const process = { env: {} };
-    process.env.GOOGLE_MAPS_API_KEY =
-      'AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg';
-  </script>
-  <!-- playground-hide-end -->
-
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-  <script type="module" src="./index.js"></script>
+  <title>File Upload</title>
 </head>
 
 <body>
-  <div id="map"></div>
+  <form>
+    <input type="file" name="upload" accept="image/*" />
+    <input type="file" accept="image/*" capture="camera" />
+  </form>
+  <video id="player" controls autoplay></video>
+  <button id="capture">Capture</button>
+  <canvas id="canvas" width="320" height="240"></canvas>
+  <script>
+    const player = document.getElementById('player');
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+    const captureButton = document.getElementById('capture');
 
-  <!--
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGgcallback=initMapv=weekly"
-    defer></script>
+    const constraints = {
+      video: true
+    };
+
+    captureButton.addEventListener('click', () => {
+      // Draw the video frame to the canvas.
+      context.drawImage(player, 0, 0, canvas.width, canvas.height);
+    });
+
+    // Attach the video stream to the video element and autoplay.
+    navigator.mediaDevices.getUserMedia(constraints).then(stream => {
+      player.srcObject = stream;
+    });
+  </script>
 </body>
 
 </html>
