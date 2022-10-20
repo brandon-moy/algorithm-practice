@@ -5,3 +5,11 @@
 .hidden {
   display: none !important;
 }
+
+.upload-button {
+  padding: 2rem;
+}
+
+.capture-button {
+  padding: 1.5rem;
+}

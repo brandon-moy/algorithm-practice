@@ -9,10 +9,14 @@
 </head>
 <body>
   <form>
-    <input class="upload" type="file" name="upload" accept="image/*" />
-    <input class="capture" type="file" accept="image/*" capture="environment" />
+    <input class="upload hidden" type="file" name="upload" accept="image/*" />
+    <input class="capture hidden" type="file" accept="image/*" capture="environment" />
     <button type="button" class="upload-button">Upload a picture</button>
     <button type="button" class="capture-button">Take a picture! (Mobile only)</button>
   </form>
+  <div class="image-modal">
+    <img class="input-image" src="">
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
