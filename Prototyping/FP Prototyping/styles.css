@@ -13,3 +13,8 @@
 .capture-button {
   padding: 1.5rem;
 }
+
+img {
+  width: 200px;
+  height: 200px;
+}

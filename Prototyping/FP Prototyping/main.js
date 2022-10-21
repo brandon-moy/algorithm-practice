@@ -16,8 +16,9 @@ function clickCapture() {
   $captureInput.click();
 }
 
-$captureInput.addEventListener('onsubmit', updateImage);
+$captureInput.addEventListener('change', loadImage);
+$uploadInput.addEventListener('change', loadImage);
 
-function updateImage() {
-  $inputImage.setAttribute('src', $captureInput.value);
+function loadImage(event) {
+  $inputImage.setAttribute('src', URL.createObjectURL(event.target.files[0]));
 }
