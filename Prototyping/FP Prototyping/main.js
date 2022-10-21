@@ -26,6 +26,9 @@ $uploadInput.addEventListener('change', loadImage);
 // 2 - Retake and it should allow the user to retake the picture or reupload by
 // activating the input again
 
+// will need to use the revokeObjectURL on the image src url to remove it from
+// browsers storage. . .
+
 function loadImage(event) {
   $inputImage.setAttribute('src', URL.createObjectURL(event.target.files[0]));
 }
