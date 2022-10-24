@@ -14,6 +14,9 @@
   transform-origin: center right;
 }
 
+/* transform-origin tells what the starting position should be for
+ the transform (top left moves to the top left corner, center is center. . . */
+
 .card-face {
   position: absolute;
   height: 100%;
@@ -25,6 +28,11 @@
   backface-visibility: hidden;
 }
 
+/* backface-visibility: hidden hides the backside  of the card so that we only
+see the front side of the card. If this is not here then the backside overtakes
+the front side and when the card is flipped it only goes from backside facing
+back to backside facing front */
+
 .card-face-front {
   background-color: red;
 }
@@ -34,6 +42,12 @@
   transform: rotateY(180deg);
 }
 
+/* having this transform pushed this as the backside of the card */
+
 .card.is-flipped {
   transform: translateX(-100%) rotateY(180deg);
 }
+
+/* this transform is what flips the card and moves it "in place" due to the
+transform-origin we pair it with translateX so that it stays in the same
+position */
