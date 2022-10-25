@@ -6,10 +6,10 @@ const $cubeFaceTop = document.querySelector('.cube-face-top');
 let count = 1;
 let intervalId = null;
 let borderIntervalId = null;
-let position = 0;
+let position = 1;
 const borders = {
-  top: ['10px, 10px, 1px, 1px', '1px, 10px, 10px, 1px',
-    '1px, 1px, 10px, 10px', '10px, 1px, 1px, 10px']
+  top: ['8px 8px 3px 3px', '3px 8px 8px 3px', '8px 3px 3px 8px',
+    '3px 3px 8px 8px']
 
 };
 
@@ -22,9 +22,9 @@ function borderSet() {
       position = 0;
       $cubeFaceTop.style.borderWidth = borders.top[position];
     } else {
-      position++;
       $cubeFaceTop.style.borderWidth = borders.top[position];
     }
+    position++;
   }, 3000);
 }
 
