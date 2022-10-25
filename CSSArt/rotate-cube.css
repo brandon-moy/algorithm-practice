@@ -34,6 +34,7 @@ body {
   height: 200px;
   border: solid white;
   background-color: rgb(137 216 255 / 45.9%);
+  transition: border-width 1s;
 }
 
 .cube-face2 {
@@ -46,6 +47,7 @@ body {
 
 .cube-face-front {
   transform: rotateY(0deg) translateZ(100px);
+  border-width: 1px 6px 1px 1px;
 }
 
 .cube-face-front2 {
@@ -54,6 +56,7 @@ body {
 
 .cube-face-right {
   transform: rotateY(90deg) translateZ(100px);
+  border-width: 1px 1px 1px 6px;
 }
 
 .cube-face-right2 {
@@ -62,6 +65,7 @@ body {
 
 .cube-face-back {
   transform: rotateY(180deg) translateZ(100px);
+  border-width: 1px 6px 1px 1px;
 }
 
 .cube-face-back2 {
@@ -70,6 +74,7 @@ body {
 
 .cube-face-left {
   transform: rotateY(-90deg) translateZ(100px);
+  border-width: 1px 1px 1px 6px;
 }
 
 .cube-face-left2 {
@@ -78,6 +83,7 @@ body {
 
 .cube-face-top {
   transform: rotateX(90deg) translateZ(100px);
+  border-width: 6px 6px 1px 1px;
 }
 
 .cube-face-top2 {
@@ -86,6 +92,7 @@ body {
 
 .cube-face-bottom {
   transform: rotateX(-90deg) translateZ(100px);
+  border-width: 6px 1px 1px 6px;
 }
 
 .cube-face-bottom2 {
