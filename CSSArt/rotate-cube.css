@@ -34,7 +34,7 @@ body {
   height: 200px;
   border: solid white;
   background-color: rgb(137 216 255 / 45.9%);
-  transition: border-width 1s;
+  transition: border-width 0.5s ease-out;
 }
 
 .cube-face2 {
