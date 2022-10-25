@@ -9,6 +9,11 @@ body {
   margin: 20vh auto;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .cube {
   width: 100%;
   height: 100%;
@@ -33,8 +38,16 @@ body {
   width: 200px;
   height: 200px;
   border: solid white;
-  background-color: rgb(137 216 255 / 45.9%);
+
+  /* background-color: rgb(137 216 255 / 45.9%); */
   transition: border-width 0.5s ease-out;
+  backface-visibility: hidden;
+}
+
+.cube-face:not(:first-child) {
+  background-image: url("pokeball.png");
+  background-size: contain;
+  background-position: center;
 }
 
 .cube-face2 {
@@ -47,7 +60,7 @@ body {
 
 .cube-face-front {
   transform: rotateY(0deg) translateZ(100px);
-  border-width: 1px 6px 1px 1px;
+  border-width: 1px 6px 6px 1px;
 }
 
 .cube-face-front2 {
@@ -56,7 +69,7 @@ body {
 
 .cube-face-right {
   transform: rotateY(90deg) translateZ(100px);
-  border-width: 1px 1px 1px 6px;
+  border-width: 1px 1px 6px 6px;
 }
 
 .cube-face-right2 {
@@ -74,7 +87,7 @@ body {
 
 .cube-face-left {
   transform: rotateY(-90deg) translateZ(100px);
-  border-width: 1px 1px 1px 6px;
+  border-width: 1px 1px 6px 6px;
 }
 
 .cube-face-left2 {

@@ -17,10 +17,10 @@ const borders = {
     '1px 1px 6px 6px', '6px 1px 1px 6px'],
   bottom: ['6px 1px 1px 6px', '1px 1px 6px 6px',
     '1px 6px 6px 1px', '6px 6px 1px 1px'],
-  left: ['1px 6px 1px 1px', '1px 1px 1px 6px',
-    '1px 6px 1px 1px', '1px 1px 1px 6px'],
-  right: ['1px 1px 1px 6px', '1px 6px 1px 1px',
-    '1px 1px 1px 6px', '1px 6px 1px 1px']
+  left: ['1px 6px 6px 1px', '1px 1px 6px 6px',
+    '1px 6px 6px 1px', '1px 1px 6px 6px'],
+  right: ['1px 1px 6px 6px', '1px 6px 6px 1px',
+    '1px 1px 6px 6px', '1px 6px 6px 1px']
 };
 
 function borderSet() {
