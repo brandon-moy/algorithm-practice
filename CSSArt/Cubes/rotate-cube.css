@@ -38,17 +38,17 @@ img {
   width: 200px;
   height: 200px;
   border: solid white;
-
-  /* background-color: rgb(137 216 255 / 45.9%); */
+  background-color: rgb(137 216 255 / 45.9%);
   transition: border-width 0.5s ease-out;
   backface-visibility: hidden;
 }
 
+/*
 .cube-face:not(:first-child) {
-  background-image: url("pokeball.png");
+  background-image: url("images/pokeball.png");
   background-size: contain;
   background-position: center;
-}
+} */
 
 .cube-face2 {
   position: absolute;
