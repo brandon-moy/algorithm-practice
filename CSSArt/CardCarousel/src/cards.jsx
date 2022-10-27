@@ -11,7 +11,7 @@ export default class Cards extends React.Component {
                 <div className="card" key={image.number}>
                   <div className="front"></div>
                   <div className="back">
-                    <img src={image.background}></img>
+                    {/* <img src={image.background}></img> */}
                   </div>
                 </div>
               );
