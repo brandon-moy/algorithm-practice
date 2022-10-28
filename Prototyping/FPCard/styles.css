@@ -1,0 +1,27 @@
+* {
+  font-family: "Fuzzy Bubbles", sans-serif;
+}
+
+.flashcard {
+  background-color: rgb(253 246 166);
+  width: 640px;
+  height: 285px;
+}
+
+.red-line {
+  height: 1px;
+  width: 100%;
+  background-color: red;
+}
+
+.blue-line {
+  margin-top: 1.5rem;
+  height: 0.5px;
+  width: 100%;
+  background-color: rgb(134 167 211);
+}
+
+.question {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
