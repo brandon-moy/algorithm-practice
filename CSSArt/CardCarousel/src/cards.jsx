@@ -8,13 +8,13 @@ export default class Cards extends React.Component {
   }
 
   handleClick(event) {
-    // console.log(event.target.closest('.card'));
-    // window.open('https://www.linkedin.com/in/ashleylho/');
-    // how can i put linkedinlinks into array and click div to open link?
+    const id = event.target.closest('.card').id;
+    const person = this.state.links.filter(links => links.name === id);
+    window.open(person[0].link);
   }
 
   componentDidMount() {
-    const links = this.props.cards.map(obj => obj.linked);
+    const links = this.props.cards.map(obj => ({ name: obj.name, link: obj.linked }));
     this.setState({ links });
   }
 
@@ -25,14 +25,14 @@ export default class Cards extends React.Component {
           {
             this.props.cards.map(image => {
               return (
-                <div className="card" key={image.number} onClick={this.handleClick}>
+                <div className="card" id={image.name} key={image.number} onClick={this.handleClick}>
                   <div className="front">
                     <img className="student-image" src={image.front}></img>
                     <h1 className="student-name">{image.name}</h1>
                   </div>
-                  {/* <div className="back"> */}
-                  {/* <img src={image.background}></img> */}
-                  {/* </div> */}
+                  <div className="back">
+                    <img className="logo" src={image.back}></img>
+                  </div>
                 </div>
               );
             })
