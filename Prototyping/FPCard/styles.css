@@ -2,14 +2,19 @@
   font-family: "Fuzzy Bubbles", sans-serif;
 }
 
+body {
+  background-image: url("chalkboard.jpg");
+  background-size: cover;
+}
+
 .flashcard {
-  margin: 0 auto;
+  margin: 10rem auto;
   width: 625px;
   height: 285px;
   transform-style: preserve-3d;
   transition: transform 1s;
   position: relative;
-  transform-origin: center right;
+  transform-origin: center;
 }
 
 .front,
@@ -50,5 +55,5 @@
 }
 
 .flashcard.is-flipped {
-  transform: translateX(-100%) rotateY(180deg);
+  transform: rotateY(180deg);
 }
