@@ -22,8 +22,8 @@ body {
 }
 
 .folder {
-  margin-left: 50rem;
-  margin-top: 30rem;
+  margin-left: 30rem;
+  margin-top: 20rem;
 }
 
 .folder-front {
@@ -48,6 +48,7 @@ body {
 
 .option-paper {
   position: absolute;
+  transform: translateX(-4px) translateY(-4px);
   background-color: white;
   width: 640px;
   height: 330px;
@@ -69,6 +70,7 @@ body {
 
 .option-paper.is-showing {
   animation: show-paper 1s linear 1;
+  transform: translateX(-4px) translateY(8px);
 }
 
 .option-paper.in-front {
@@ -84,7 +86,7 @@ body {
     transform: 0;
   }
 
-  50% {
+  40% {
     transform: translateY(-20rem);
   }
 
@@ -99,7 +101,7 @@ body {
     transform: 0;
   }
 
-  50% {
+  60% {
     transform: translateY(-20rem);
   }
 
