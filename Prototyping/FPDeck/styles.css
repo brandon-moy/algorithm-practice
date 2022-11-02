@@ -1,0 +1,109 @@
+* {
+  font-family: "Fuzzy Bubbles", sans-serif;
+}
+
+body {
+  background-image: url("chalkboard.jpg");
+  background-size: cover;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+}
+
+.deck-text {
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+
+.option-image {
+  margin-left: 12rem;
+}
+
+.folder {
+  margin-left: 50rem;
+  margin-top: 30rem;
+}
+
+.folder-front {
+  position: absolute;
+  width: 640px;
+  height: 330px;
+  background-color: #fff3cd;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 2px solid brown;
+  z-index: 2;
+  transition: transform 0.25s;
+}
+
+.folder-back {
+  position: absolute;
+  width: 640px;
+  height: 330px;
+  background-color: #fff3cd;
+  border-radius: 0 0.5rem 0 0;
+  z-index: -2;
+}
+
+.option-paper {
+  position: absolute;
+  background-color: white;
+  width: 640px;
+  height: 330px;
+}
+
+.folder-tab {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  bottom: -0;
+  background-color: #fff3cd;
+  border-radius: 0.5rem 0.5rem 0 0;
+  z-index: -2;
+}
+
+.folder-front:hover {
+  transform: translateY(7px) rotateX(-20deg);
+}
+
+.option-paper.is-showing {
+  animation: show-paper 1s linear 1;
+}
+
+.option-paper.in-front {
+  z-index: 3;
+}
+
+.option-paper.hiding {
+  animation: hide-paper 1s linear 1;
+}
+
+@keyframes show-paper {
+  0% {
+    transform: 0;
+  }
+
+  50% {
+    transform: translateY(-20rem);
+  }
+
+  100% {
+    transform: 0;
+    z-index: 3;
+  }
+}
+
+@keyframes hide-paper {
+  0% {
+    transform: 0;
+  }
+
+  50% {
+    transform: translateY(-20rem);
+  }
+
+  100% {
+    transform: 0;
+  }
+}
