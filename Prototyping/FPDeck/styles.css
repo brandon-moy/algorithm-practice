@@ -8,6 +8,29 @@ body {
   margin: 0;
 }
 
+.page-header {
+  height: 15vh;
+  background-color: #2c0b03;
+}
+
+.header-title {
+  color: white;
+  margin: 0;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.add-deck {
+  color: white;
+  text-decoration: none;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+.add-deck:hover {
+  cursor: pointer;
+}
+
 .hidden {
   display: none !important;
 }
@@ -42,7 +65,7 @@ body {
 
 .folder {
   margin-left: 30rem;
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .folder-front {
@@ -116,6 +139,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.continue-deck {
+  border: none;
+  background-color: transparent;
+  margin-top: 2rem;
+  margin-left: 8rem;
+  font-size: 1.25rem;
 }
 
 /* Some positioning and ratios */

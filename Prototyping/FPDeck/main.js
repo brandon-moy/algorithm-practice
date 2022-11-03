@@ -1,7 +1,7 @@
 const $form = document.querySelector('.new-deck-form');
 const $input = document.querySelector('.modal-input');
 const $modalBackground = document.querySelector('.modal-background');
-const $newDeck = document.querySelector('.new-deck');
+const $newDeck = document.querySelector('.add-deck');
 const $deckContainer = document.querySelector('.deck-container');
 
 $newDeck.addEventListener('click', () => {
