@@ -11,17 +11,47 @@
   <title>Deck Test</title>
 </head>
 <body>
-  <div class="scene">
-    <div class="folder">
-      <div class="folder-front">
-        <h1 class="deck-text">Click me!</h1>
+  <button class="new-deck" type="button">New Deck</button>
+  <div class="deck-container">
+
+  </div>
+  <!-- <div class="deck hidden">
+    <div class="scene">
+      <div class="folder">
+        <div class="folder-front">
+          <h1 class="deck-text">Click me!</h1>
+        </div>
+        <div class="option-paper">
+          <p class="peepers">oh hey im peeping( O-O )/ </p>
+          <h1>This is the last silly thing I animate</h1>
+          <img class="option-image" src="200.gif">
+        </div>
+        <div class="folder-back"></div>
+        <div class="folder-tab"></div>
       </div>
-      <div class="option-paper">
-        <h1>This is the last silly thing I animate</h1>
-        <img class="option-image" src="200.gif">
+    </div>
+  </div> -->
+  <div class="modal-background hidden">
+    <div class="sticky-container">
+      <div class="sticky-outer">
+        <div class="sticky">
+          <svg width="0" height="0">
+            <defs>
+              <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                <path d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
+                  stroke-linejoin="round" stroke-linecap="square" />
+              </clipPath>
+            </defs>
+          </svg>
+          <div class="sticky-content">
+            <h1 class="modal-title">Create New Deck</h1>
+            <form class="new-deck-form">
+              <input class="modal-input" type="text" placeholder="e.g. HTML, CSS, JavaScript">
+              <button class="continue-deck">Continue</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="folder-back"></div>
-      <div class="folder-tab"></div>
     </div>
   </div>
   <script src="main.js"></script>
