@@ -8,21 +8,25 @@ $newDeck.addEventListener('click', () => {
   $modalBackground.classList.remove('hidden');
 });
 
-// function showPaper() {
-//   $paper.classList.remove('hiding');
-//   $paper.classList.add('is-showing');
-//   setTimeout(() => {
-//     $paper.classList.add('in-front');
-//   }, 900);
-// }
+document.addEventListener('click', event => {
+  if (event.target.id !== 'ff') return;
+  const $paper = document.querySelector('#op');
+  $paper.classList.remove('hiding');
+  $paper.classList.add('is-showing');
+  setTimeout(() => {
+    $paper.classList.add('in-front');
+  }, 900);
+});
 
-// function hidePaper() {
-//   $paper.classList.remove('is-showing');
-//   $paper.classList.add('hiding');
-//   setTimeout(() => {
-//     $paper.classList.remove('in-front');
-//   }, 500);
-// }
+document.addEventListener('click', event => {
+  if (event.target.id !== 'op') return;
+  event.target.classList.remove('is-showing');
+  event.target.classList.add('hiding');
+  setTimeout(() => {
+    event.target.classList.remove('in-front');
+  }, 500);
+
+});
 
 $form.addEventListener('submit', event => {
   event.preventDefault();
@@ -48,31 +52,19 @@ function createDeck(deckName) {
   $scene.className = 'scene';
   $folder.className = 'folder';
   $folderFront.className = 'folder-front';
+  $folderFront.setAttribute('id', 'ff');
   $deckText.className = 'deck-text';
   $optionPaper.className = 'option-paper';
+  $optionPaper.setAttribute('id', 'op');
   $peepers.className = 'peepers';
   $optionImage.className = 'option-image';
   $folderBack.className = 'folder-back';
   $folderTab.className = 'folder-tab';
-  $optionImage.setAttribute('src', '200.gif');
+  $optionImage.setAttribute('src', '300.gif');
   $deckText.textContent = deckName;
   $peepers.textContent = 'oh hey im peeping(O - O) /';
-  $extraText.textContent = 'Sorry, I lied about not animating anything else';
-
-  $folderFront.setAttribute('onClick', () => {
-    $optionPaper.classList.remove('hiding');
-    $optionPaper.classList.add('is-showing');
-    setTimeout(() => {
-      $optionPaper.classList.add('in-front');
-    }, 900);
-  });
-  $optionPaper.onClick = () => {
-    $optionPaper.classList.remove('is-showing');
-    $optionPaper.classList.add('hiding');
-    setTimeout(() => {
-      $optionPaper.classList.remove('in-front');
-    }, 500);
-  };
+  $extraText.className = 'extra-text';
+  $extraText.textContent = 'I lied about not animating anything else (but I got your red line!)';
 
   $deck.appendChild($scene);
   $scene.appendChild($folder);
