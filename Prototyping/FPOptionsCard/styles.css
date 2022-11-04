@@ -1,0 +1,42 @@
+body {
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgb(69 102 69),
+      rgb(32 63 40)
+    );
+}
+
+.card {
+  margin: 0 auto;
+  background: repeating-linear-gradient(#fff, #fff 2.5rem, #9198e5 2.5rem, #9198e5 2.7rem);
+  width: 50rem;
+  height: 30rem;
+}
+
+.stripes {
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      transparent 10%,
+      red 10%,
+      red 10.5%,
+      transparent 10.5%,
+      transparent 12%,
+      red 12%,
+      red 12.5%,
+      transparent 12.5%
+    );
+}
+
+.deck-title {
+  width: 70%;
+  padding-top: 1.5rem;
+  margin: 0 auto;
+}
+  }
+}
+}
