@@ -1,0 +1,42 @@
+.clipboard {
+  position: relative;
+  width: 10rem;
+  height: 30vh;
+  background-color: brown;
+  border-radius: 0.25rem;
+  margin: 5rem;
+  padding-top: 1rem;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  width: 8rem;
+  height: 2rem;
+  background-color: grey;
+  margin-left: 1rem;
+}
+
+.page {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin-left: 0.5rem;
+}
+
+.sign-in {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+label {
+  text-align: left;
+}
+
+.username {
+  width: 90%;
+}
+
+.password {
+  width: 90%;
+}
