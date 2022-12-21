@@ -1,15 +1,20 @@
 function solution(inputArray) {
-  var output = 0;
-  for (let i = 0; i < inputArray.length; i++) {
-    if (inputArray[i] >= inputArray[i + 1]) {
-      while (inputArray[i] >= inputArray[i + 1]) {
-        inputArray[i + 1]++;
-        output++;
+  var output = 0; // 1 * 1 = 0(1)
+  for (
+    let i = 0; // 1 * 1 = 0(1)
+    i < inputArray.length; // 2 * n = 0(2n) ~= 0(n)
+    i++) { // 2 * n = 0(2n) ~= 0(n)
+    if (inputArray[i] >= inputArray[i + 1]) { // 3 * n = 0(3n) ~= 0(n)
+      while (inputArray[i] >= inputArray[i + 1]) { // 3 * n * n = 0(3n^2) ~= 0(n^2)
+        inputArray[i + 1]++; // 3 * n * n = 0(3n^2) ~= 0(n^2)
+        output++; // 2 * n * n = 0(2n^2) ~= 0(n^2)
       }
     }
   }
-  return output;
+  return output; // 1 * 1 = 0(1)
 }
+
+// Big O Notation: 0(n^2) quadratic time
 
 // create an output for solution
 // loop through the array
