@@ -1,22 +1,27 @@
 function solution(a, b) {
-  const diff = [];
-  for (var i = 0; i < a.length; i++) {
-    if (a[i] !== b[i]) {
-      diff.push(i);
+  const diff = []; // 1 * 1 = 0(1)
+  for (
+    var i = 0; // 1 * 1 = 0(1)
+    i < a.length; // 2 * n = 0(2n) ~= 0(n)
+    i++) { // 2 * n = 0(2n)
+    if (a[i] !== b[i]) { // 3 * n = 0(3n) ~= 0(n)
+      diff.push(i); // ? * n = 0(?n) ~= 0(n)
     }
   }
 
-  if (diff.length === 0) {
-    return true;
+  if (diff.length === 0) { // 2 * 1 = 0(2) ~= 0(1)
+    return true; // 1 * 1 = 0(1)
   }
 
-  if (diff.length === 2) {
-    if (a[diff[0]] === b[diff[1]] && a[diff[1]] === b[diff[0]]) {
-      return true;
+  if (diff.length === 2) { // 2 * 1 = 0(2) ~= 0(1)
+    if (a[diff[0]] === b[diff[1]] && a[diff[1]] === b[diff[0]]) { // 7 * 1 = 0(7) ~= 0(1)
+      return true; // 1 * 1 = 0(1)
     }
   }
-  return false;
+  return false; // 1 * 1 = 0(1)
 }
+
+// Big O Notation: 0(n) linear time
 
 solution([1, 2, 3], [1, 2, 3]);
 
