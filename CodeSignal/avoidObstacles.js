@@ -1,20 +1,24 @@
 function solution(inputArray) {
 
-  var jump = 1;
-  var valid = true;
+  var jump = 1; // 1 * 1 = 0(1)
+  var valid = true; // 1 * 1 = 0(1)
 
-  while (true) {
-    valid = true;
-    for (var i = 0; i < inputArray.length; i++) {
-      if (inputArray[i] % jump === 0) {
-        valid = false;
+  while (true) { // 2 * n = 0(2n)
+    valid = true; // 1 * n = 0(n)
+    for (var i = 0; // 1 * n = 0(n)
+      i < inputArray.length; // 2 * n * n = 0(2n^2) ~= 0(n^2)
+      i++) { // 2 * n * n = 0(2n^2) ~= 0(n^2)
+      if (inputArray[i] % jump === 0) { // 3 * n * n = 0(3n^2) ~= 0(n^2)
+        valid = false; //  1 * n * n = 0(n^2)
       }
     }
-    if (valid === true) {
-      return jump;
+    if (valid === true) { // 2 * n = 0(2n) ~= 0(n)
+      return jump; // 1 * 1 = 0(1)
     }
-    jump++;
+    jump++; // 2 * n = 0(2n) ~= 0(n)
   }
 }
+
+// Big O Notation: 0(n^2) quadratic time
 
 solution([0, 0]);
