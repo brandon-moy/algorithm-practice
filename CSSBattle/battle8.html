@@ -1,0 +1,58 @@
+<div class="fork-body"></div>
+<div class="prong-container">
+  <div class="prong"></div>
+  <div class="prong-space"></div>
+  <div class="prong"></div>
+  <div class="prong-space"></div>
+  <div class="prong"></div>
+  <div class="prong-space"></div>
+  <div class="prong"></div>
+</div>
+<div class="fork-stem"></div>
+  <style>
+    body {
+      background: #6592cf;
+    }
+
+    .prong-container {
+      display: flex;
+      position: absolute;
+      left: 130px;
+      top: 47px;
+    }
+
+    .prong,
+    .prong-space {
+      width: 22px;
+      height: 115px;
+      border-radius: 1.25rem 1.25rem 0 0;
+    }
+
+    .prong {
+      background: #060f55;
+    }
+
+    .prong-space {
+      background: #6592cf;
+      transform: rotate(180deg);
+    }
+
+    .fork-body {
+      position: absolute;
+      background: #060f55;
+      width: 154px;
+      height: 100px;
+      border-radius: 0 0 6rem 6rem;
+      left: 130px;
+      top: 150px;
+    }
+
+    .fork-stem {
+      position: absolute;
+      background: #060f55;
+      width: 20px;
+      height: 100px;
+      bottom: 0;
+      left: 198px;
+    }
+  </style>
