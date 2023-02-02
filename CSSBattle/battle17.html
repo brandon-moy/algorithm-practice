@@ -1,0 +1,52 @@
+<div class="bar">
+  <div class="c"></div>
+  <div class="c"></div>
+</div>
+<div class="d-bar">
+  <div class="d"></div>
+  <div class="d"></div>
+</div>
+<style>
+  body {
+    background: #09042a;
+  }
+
+  .bar {
+    margin: 120px auto;
+    width: 200px;
+    height: 60px;
+    border-radius: 150px;
+    background: #e78481;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .c {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #09042a;
+    border: 10px solid #e78481;
+  }
+
+  .d-bar {
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    width: 80px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .d {
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f5bb9c;
+    border: 10px solid #09042a;
+  }
+</style>
