@@ -1,0 +1,56 @@
+<div class="column">
+  <div class="circle c1"></div>
+</div>
+<div class="column col2">
+  <div class="circle c2"></div>
+</div>
+<div class="column">
+  <div class="circle c1"></div>
+</div>
+<style>
+  body {
+    background: #62306d;
+    display: flex;
+    justify-content: center;
+  }
+
+  .column {
+    width: 100px;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+        transparent,
+        transparent 65%,
+        #f7ec7d 65%);
+  }
+
+  .col2 {
+    background: linear-gradient(to bottom,
+        transparent,
+        transparent 30%,
+        #f7ec7d 30%);
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background:
+      radial-gradient(circle,
+        #e38f66,
+        #e38f66 40%,
+        #aa445f 40%);
+    border-radius: 50%;
+  }
+
+  .c1 {
+    margin-top: 140px;
+  }
+
+  .c2 {
+    margin-top: 40px;
+    background:
+      radial-gradient(circle,
+        #aa445f,
+        #aa445f 40%,
+        #e38f66 40%);
+  }
+</style>
