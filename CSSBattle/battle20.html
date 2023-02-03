@@ -1,0 +1,90 @@
+<div class="tt">
+  <div class="r lg tl"></div>
+  <div class="r lg bl"></div>
+  <div class="r sm tc"></div>
+  <div class="r sm bc"></div>
+  <div class="r lg tr"></div>
+  <div class="r lg br"></div>
+  <div class="t">
+    <div class="y"></div>
+    <div class="o"></div>
+  </div>
+</div>
+
+<style>
+  * {
+    background: #62306d;
+  }
+
+  .t,
+  .tt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+  }
+
+  .t {
+    display: flex;
+  }
+
+  .y {
+    width: 70%;
+    background: #f7ec7d;
+  }
+
+  .o {
+    width: 30%;
+    background: #e38f66;
+  }
+
+  .r {
+    position: absolute;
+    z-index: 1;
+    background: #62306d;
+    border-radius: 50%;
+  }
+
+  .lg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sm {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tl {
+    transform: translate(-20px, -20px);
+  }
+
+  .bl {
+    bottom: 0;
+    transform: translate(-20px, 20px);
+  }
+
+  .tc {
+    left: 70%;
+    transform: translate(-10px, -10px);
+  }
+
+  .bc {
+    bottom: 0;
+    left: 70%;
+    transform: translate(-10px, 10px);
+  }
+
+  .tr {
+    right: 0;
+    transform: translate(20px, -20px);
+  }
+
+  .br {
+    bottom: 0;
+    right: 0;
+    transform: translate(20px, 20px);
+  }
+</style>
