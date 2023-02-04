@@ -102,3 +102,14 @@ last_name,
 birth_date
 from patients
 where height > 160 and weight > 70
+
+-- 16) Write a query to find list of patients first_name, last_name, and
+-- allergies from Hamilton where allergies are not null
+select
+  first_name,
+  last_name,
+  allergies
+from patients
+where
+  city = 'Hamilton'
+  and allergies IS NOT null
