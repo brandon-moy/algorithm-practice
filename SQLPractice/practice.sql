@@ -113,3 +113,16 @@ from patients
 where
   city = 'Hamilton'
   and allergies IS NOT null
+
+-- 17) Based on cities where our patient lives in, write a query to display the
+-- list of unique city starting with a vowel (a, e, i, o, u). Show the result
+-- order in ascending by city.
+SELECT distinct city
+from patients
+where
+  city LIKE 'a%'
+  or city like 'e%'
+  or city like 'i%'
+  or city like 'o%'
+  or city like 'u%'
+order by city asc
