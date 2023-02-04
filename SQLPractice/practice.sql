@@ -1,3 +1,4 @@
+-- EASY QUESTIONS
 -- 1) Show first name, last name, and gender of patients who's gender is 'M'
 SELECT
   first_name,
@@ -126,3 +127,9 @@ where
   or city like 'o%'
   or city like 'u%'
 order by city asc
+
+-- MEDIUM QUESTIONS
+-- Show unique birth years from patients and order them by ascending.
+select distinct YEAR(birth_date)
+from patients
+order by birth_date asc
