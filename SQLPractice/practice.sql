@@ -68,3 +68,8 @@ select
 *
 from patients
 where patient_id in (1, 45, 534, 879, 1000)
+
+-- Show the total number of admissions
+select
+count(patient_id) as admissions
+from admissions
