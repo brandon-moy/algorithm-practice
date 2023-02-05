@@ -305,3 +305,14 @@ where
     attending_doctor_id like '%2%'
     and len(patient_id) = 3
   )
+
+-- 36) Show first_name, last_name, and the total number of admissions
+-- attended for each doctor.
+-- Every admission has been attended by a doctor.
+select
+  first_name,
+  last_name,
+  count(*) as admissions_total
+from admissions
+  join doctors ph on ph.doctor_id = admissions.attending_doctor_id
+group by attending_doctor_id
