@@ -327,3 +327,12 @@ select
 from admissions
   join doctors ph on ph.doctor_id = admissions.attending_doctor_id
 group by attending_doctor_id
+
+-- 38) Display the total amount of patients for each province. Order by descending.
+select
+  province_name,
+  count(*) as patient_count
+from patients pa
+  join province_names pr ON pr.province_id = pa.province_id
+group by pr.province_id
+order by patient_count desc
