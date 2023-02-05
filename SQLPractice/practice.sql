@@ -234,3 +234,22 @@ from patients
 where allergies is not null
 group by allergies
 order by total_diagnosis desc
+
+-- 29) Show all patient's first_name, last_name, and birth_date who were born in
+-- the 1970s decade. Sort the list starting from the earliest birth_date.
+select
+  first_name,
+  last_name,
+  birth_date
+from patients
+where year(birth_date) like '197%'
+order by birth_date
+
+-- 30) We want to display each patient's full name in a single column. Their
+-- last_name in all upper letters must appear first, then first_name in all
+-- lower case letters. Separate the last_name and first_name with a comma.
+-- Order the list by the first_name in decending order EX: SMITH,jane
+select
+  concat(upper(last_name), ',', lower(first_name)) as new_name_format
+from patients
+order by first_name desc
