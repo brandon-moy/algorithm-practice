@@ -465,3 +465,21 @@ SELECT
     end as cost_after_insurance
 FROM admissions
 group by has_insurance
+
+-- 47) Show the provinces that has more patients identified as 'M' than 'F'.
+-- Must only show full province_name
+
+select pn.province_name
+from patients as pa
+  join province_names as pn on pa.province_id = pn.province_id
+group by pn.province_name
+having
+  count(
+    case
+      when gender = 'M' then 1
+    END
+  ) > count(
+    case
+      when gender = 'F' then 1
+    end
+  )
