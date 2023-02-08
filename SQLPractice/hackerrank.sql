@@ -15,3 +15,8 @@ where countrycode = 'USA' and population > 120000
 -- 3 ) Query all columns (attributes) for every row in the CITY table.
 select *
 from city
+
+-- 4) Query all columns for a city in CITY with the ID 1661.
+select *
+from city
+where id = 1661
