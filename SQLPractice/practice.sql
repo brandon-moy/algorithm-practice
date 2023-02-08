@@ -519,3 +519,13 @@ select concat(
     '%'
   ) as percent_of_male_patients
 from patients
+
+-- 50) For each day display the total amount of admissions on that day.
+-- Display the amount changed from the previous date.
+
+select
+  admission_date,
+  count(*) as admissions,
+  count(*) - lag(count(8), 1) over() as admissions_count_change
+from admissions
+group by admission_date
