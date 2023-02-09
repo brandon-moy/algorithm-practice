@@ -115,3 +115,28 @@ select distinct city
 from station
 where left(city,1) not in ('A', 'E', 'I', 'O', 'U')
 and right(city,1) not in ('a','e','i','o','u')
+
+-- 18) Query the Name of any student in STUDENTS who scored higher than  Marks.
+-- Order your output by the last three characters of each name. If two or more
+-- students both have names ending in the same last three characters
+-- (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+select Name
+from Students
+where Marks > 75
+order by right(Name, 3), ID
+
+-- 19) Write a query that prints a list of employee names
+-- (i.e.: the name attribute) from the Employee table in alphabetical order.
+select name
+from Employee
+order by name
+
+-- 20) Write a query that prints a list of employee names
+-- (i.e.: the name attribute) for employees in Employee having a salary greater
+-- than  per month who have been employees for less than  months.
+-- Sort your result by ascending employee_id.
+select name
+from Employee
+where salary > 2000
+and months < 10
+order by employee_id
