@@ -89,3 +89,29 @@ select distinct city
 from station
 where left(city,1) in ('A', 'E', 'I', 'O', 'U')
 and right(city,1) in ('a','e','i','o','u')
+
+-- 14) Query the list of CITY names from STATION that do not start with vowels.
+-- Your result cannot contain duplicates.
+select distinct city
+from station
+where left(city,1) not in ('A','E','I','O','U')
+
+-- 15) Query the list of CITY names from STATION that do not end with vowels.
+-- Your result cannot contain duplicates.
+select distinct city
+from station
+where right(city,1) not in ('a','e','i','o','u')
+
+-- 16) 	Query the list of CITY names from STATION that either do not start with
+-- vowels or do not end with vowels. Your result cannot contain duplicates.
+select distinct city
+from station
+where left(city,1) not in ('A', 'E', 'I', 'O', 'U')
+or right(city,1) not in ('a','e','i','o','u')
+
+-- 17) Query the list of CITY names from STATION that do not start with vowels
+-- and do not end with vowels. Your result cannot contain duplicates.
+select distinct city
+from station
+where left(city,1) not in ('A', 'E', 'I', 'O', 'U')
+and right(city,1) not in ('a','e','i','o','u')
