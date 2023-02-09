@@ -69,3 +69,23 @@ select
 from station
 order by length(city) desc, city asc
 limit 1;
+
+-- 11) Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u)
+--  from STATION. Your result cannot contain duplicates.
+select distinct city
+from station
+where left(city,1) in ('A', 'E', 'I', 'O', 'U')
+
+-- 12) Query the list of CITY names ending with vowels (a, e, i, o, u)
+-- from STATION. Your result cannot contain duplicates.
+select distinct city
+from station
+where right(city,1) in ('a','e','i','o','u')
+
+-- 13) Query the list of CITY names from STATION which have vowels
+-- (i.e., a, e, i, o, and u) as both their first and last characters.
+-- Your result cannot contain duplicates.
+select distinct city
+from station
+where left(city,1) in ('A', 'E', 'I', 'O', 'U')
+and right(city,1) in ('a','e','i','o','u')
