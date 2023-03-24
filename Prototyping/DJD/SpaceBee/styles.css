@@ -1,0 +1,157 @@
+.container {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.bee-body {
+  width: 10rem;
+  aspect-ratio: 4 / 3;
+  border-radius: 15rem;
+  background:
+    radial-gradient(
+      circle at left,
+      #feb1f9 60%,
+      black 60%,
+      black 65%,
+      #feb1f9 65%,
+      #feb1f9 80%,
+      black 80%,
+      black 85%,
+      #feb1f9 85%
+    );
+  box-shadow: inset -3px -3px 10px 1px #9b5ad1;
+}
+
+.petal {
+  z-index: 5;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #feb1f9;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  box-shadow:
+    7.5px 8.5px #9b5ad1,
+    -7.5px 8.5px #9b5ad1,
+    -11px -3.5px #9b5ad1,
+    0 -11px #9b5ad1,
+    11px -3.5px #9b5ad1;
+}
+
+.p-1 {
+  top: -30%;
+  left: 10%;
+}
+
+.p-2 {
+  top: -10%;
+  left: -20%;
+}
+
+.antenna {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  border-top: 4px solid black;
+  border-right: 4px solid transparent;
+}
+
+.a-1 {
+  transform: rotate(50deg) translateY(-40%) translateX(-10%);
+}
+
+.a-2 {
+  transform: rotate(30deg) translateX(-50%) translateY(40%);
+}
+
+.eye-container {
+  position: absolute;
+  width: 60px;
+  top: 30%;
+  left: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.eye {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: rgb(255 255 195);
+}
+
+.mouth {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  width: 15px;
+  aspect-ratio: 2 / 1;
+  border-radius: 0 0 50rem 50rem;
+  background: rgb(0 0 0);
+}
+
+.leg {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  border-radius: 0 0 125% 125%;
+  background: #feb1f9;
+}
+
+.l-1 {
+  left: 20%;
+  bottom: -10%;
+  transform: rotate(15deg);
+  z-index: -10;
+}
+
+.l-2 {
+  left: 40%;
+  bottom: -10%;
+  transform: rotate(15deg);
+}
+
+.l-3 {
+  left: 55%;
+  bottom: -7.5%;
+  transform: rotate(-15deg);
+  z-index: -10;
+}
+
+.l-4 {
+  left: 70%;
+  bottom: -7.5%;
+  transform: rotate(-15deg);
+}
+
+.stinger {
+  position: absolute;
+  right: -15%;
+  top: 45%;
+  border-left: 25px solid black;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.wing {
+  position: absolute;
+  width: 50px;
+  height: 75px;
+  border-radius: 0.25rem 5rem;
+  top: -55%;
+}
+
+.w-1 {
+  left: 60%;
+  transform: rotate(75deg);
+  background: rgb(202 255 202);
+}
+
+.w-2 {
+  left: 45%;
+  z-index: -5;
+  transform: rotate(60deg);
+  background: rgb(169 211 169);
+}
