@@ -1,4 +1,5 @@
 // Used to "memoize" an entire functions
+import { React, useState, useCallback } from 'react';
 
 function App() {
   const [count, setCount] = useState(60);
