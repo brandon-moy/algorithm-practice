@@ -17,7 +17,6 @@ function reducer(state, action) {
   }
 }
 
-// eslint-disable-next-line
 function App() {
   // returns an array of two values
   // value of state to show in UI

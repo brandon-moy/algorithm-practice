@@ -8,7 +8,6 @@ const moods = {
 
 const MoodContext = createContext();
 
-// eslint-disable-next-line
 function App(props) {
   return (
     // scopes the happy mood from the object
