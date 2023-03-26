@@ -13,19 +13,47 @@ body {
   width: 50%;
   aspect-ratio: 2 / 1;
   border-radius: 100rem 100rem 0 0;
+  background:
+    linear-gradient(
+      to bottom,
+      orange,
+      red,
+      orange,
+      brown,
+      orange,
+      red,
+      orange
+    );
 
-  /* background: rgb(194 168 122); */
-
-  background: url("images/venus.jfif");
-  background-size: 150%;
+  /* background: url("images/venus.jfif"); */
+  background-size: 200% 200%;
   animation: planet 20s linear infinite;
   box-shadow: inset 0 5px 100px 25px rgb(80 65 56);
+}
+
+.circles {
+  position: absolute;
+  inset: 0;
+  border-radius: 100rem 100rem 0 0;
+  background-color: transparent;
+  background-image:
+    radial-gradient(ellipse at 20% 40%, rgb(156 100 50) 10%, transparent 15%),
+    radial-gradient(circle at 70% 30%, rgb(79 8 8) 1%, transparent 20%),
+    radial-gradient(ellipse at 60% 70%, rgb(107 70 70) 1%, transparent 15%);
+
+  /* background-blend-mode: multiply; */
+  background-size: 100% 200%;
+
+  /* box-shadow: inset 0 5px 100px 25px rgb(80 65 56); */
+
+  animation: planet 20s linear infinite;
 }
 
 .planet-name {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 3rem;
+  z-index: 20;
 }
 
 .glow {
@@ -50,10 +78,10 @@ body {
 
 @keyframes planet {
   0% {
-    background-position-y: 0%;
+    background-position: center 0%;
   }
 
   100% {
-    background-position-y: 150%;
+    background-position: center -200%;
   }
 }
