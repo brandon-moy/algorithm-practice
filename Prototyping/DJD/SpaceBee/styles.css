@@ -82,6 +82,25 @@
   background: rgb(255 255 195);
 }
 
+.pupil {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: rgb(169 211 169);
+  margin-left: 2.5px;
+  position: relative;
+}
+
+.highlight {
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+}
+
 .mouth {
   position: absolute;
   top: 60%;
