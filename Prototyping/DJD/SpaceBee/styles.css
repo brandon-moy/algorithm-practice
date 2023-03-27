@@ -1,7 +1,20 @@
+body {
+  background: rgb(60 60 60);
+}
+
 .container {
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%) rotateY(180deg);
+  animation: zoom 5s linear infinite;
+}
+
+.bar {
+  width: 5%;
+  aspect-ratio: 8 / 1;
+  border-radius: 0.5rem;
+  background: rgb(159 254 252);
 }
 
 .bee-body {
@@ -173,4 +186,28 @@
   z-index: -5;
   transform: rotate(60deg);
   background: rgb(169 211 169);
+}
+
+@keyframes zoom {
+  0% {
+    transform: translate(-50%) rotateY(180deg) scaleX(0.9) scaleY(1.1);
+  }
+
+  10% {
+    transform: translate(-50%) rotateY(180deg) scaleX(1.2) scaleY(0.8);
+  }
+
+  90% {
+    transform: translate(-50%) rotateY(180deg);
+  }
+}
+
+@keyframes ltr {
+  0% {
+    margin-left: 100%;
+  }
+
+  100% {
+    margin-left: -100%;
+  }
 }
