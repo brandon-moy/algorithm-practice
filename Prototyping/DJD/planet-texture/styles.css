@@ -13,7 +13,7 @@ body {
   border-radius: 100rem 100rem 0 0;
 }
 
-.circles-1 {
+/* .circles-1 {
   position: absolute;
   inset: 0;
   border-radius: 100rem 100rem 0 0;
@@ -110,7 +110,7 @@ body {
   background-size: 100% 200%;
   box-shadow: inset 0 5px 100px 5px rgb(80 65 56);
   animation: planet 20s linear infinite;
-}
+} */
 
 /* .circles-3 {
   position: absolute;
@@ -166,19 +166,25 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 100rem 100rem 0 0;
+  background-color: orange;
+}
+
+.circles-1 {
+  position: absolute;
+  inset: 0;
+  border-radius: 100rem 100rem 0 0;
   background:
     linear-gradient(
-      to bottom,
-      orange,
+      45deg,
+      transparent,
       red,
-      orange,
-      brown,
-      orange,
+      transparent,
       red,
-      orange
+      transparent
     );
   background-size: 100% 200%;
-  animation: planet 20s linear infinite;
+  box-shadow: inset 0 5px 100px 15px rgb(0 0 0);
+  animation: planet 5s linear infinite;
 }
 
 .texture-1 {
