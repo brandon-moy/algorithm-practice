@@ -11,10 +11,14 @@ body {
 }
 
 .bar {
+  position: absolute;
+  top: var(--top);
   width: 5%;
   aspect-ratio: 8 / 1;
   border-radius: 0.5rem;
   background: rgb(159 254 252);
+  animation: ltr 2s linear infinite;
+  animation-delay: var(--delay);
 }
 
 .bee-body {
@@ -204,10 +208,10 @@ body {
 
 @keyframes ltr {
   0% {
-    margin-left: 100%;
+    margin-left: 80%;
   }
 
   100% {
-    margin-left: -100%;
+    margin-left: -80%;
   }
 }
