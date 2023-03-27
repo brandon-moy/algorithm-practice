@@ -4,6 +4,7 @@
   border-radius: 100%;
   display: flex;
   justify-content: center;
+  box-shadow: inset 10px -10px 20px 20px rgb(0 0 0 / 20.7%);
 }
 
 .mercury {
@@ -13,7 +14,6 @@
     radial-gradient(circle at 40% 70%, rgb(147 147 147) 15%, transparent 15%),
     radial-gradient(circle at 60% 10%, rgb(147 147 147) 5%, transparent 5%),
     radial-gradient(circle at 80% 51%, rgb(147 147 147) 4%, transparent 4%);
-  box-shadow: inset 10px -10px 20px 20px rgb(162 162 162);
 }
 
 .venus {
@@ -25,7 +25,31 @@
     radial-gradient(circle at 70% 70%, rgb(126 87 60) 3%, transparent 3%),
     radial-gradient(circle at 80% 30%, rgb(126 87 60) 2%, transparent 2%),
     radial-gradient(circle at 80% 51%, rgb(126 87 60) 4%, transparent 4%);
-  box-shadow: inset 10px -10px 20px 20px rgb(98 67 47);
+}
+
+.earth {
+  background-color: rgb(96 168 240);
+  background-image:
+    radial-gradient(ellipse at 12% 15%, rgb(61 191 52) 15%, transparent 5%),
+    radial-gradient(circle at 30% 58%, rgb(61 191 52) 10%, transparent 10%),
+    radial-gradient(ellipse at 30% 50%, rgb(61 191 52) 15%, transparent 15%),
+    radial-gradient(circle at 28% 62%, rgb(61 191 52) 8%, transparent 8%),
+    radial-gradient(ellipse at 24% 68%, rgb(61 191 52) 5%, transparent 5%),
+    radial-gradient(circle at 60% 0, rgb(255 255 255) 5%, transparent 5%),
+    radial-gradient(circle at 30% 100%, rgb(255 255 255) 9%, transparent 9%),
+    radial-gradient(circle at 80% 30%, rgb(61 191 52) 20%, transparent 20%),
+    radial-gradient(ellipse at 90% 60%, rgb(61 191 52) 15%, transparent 15%);
+}
+
+.mars {
+  background-color: rgb(211 88 88);
+  background-image:
+    radial-gradient(circle at 20% 5%, rgb(119 34 34) 15%, transparent 0),
+    radial-gradient(circle at 30% 100%, rgb(119 34 34) 15%, transparent 0),
+    radial-gradient(circle at 60% 110%, rgb(119 34 34) 15%, transparent 0),
+    radial-gradient(circle at 40% 40%, rgb(119 34 34) 18%, transparent 0),
+    radial-gradient(ellipse at 55% 50%, rgb(119 34 34) 20%, transparent 0),
+    radial-gradient(circle at 45% 0, rgb(119 34 34) 10%, transparent 0);
 }
 
 .face-container {
