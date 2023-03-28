@@ -125,7 +125,10 @@ body {
   width: 15px;
   aspect-ratio: 2 / 1;
   border-radius: 0 0 50rem 50rem;
-  background: rgb(0 0 0);
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  border-left: 4px solid transparent;
+  transform: rotate(15deg);
 }
 
 .leg {
