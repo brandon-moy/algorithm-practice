@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-wrap: wrap;
+  background: black;
 }
 
 .planet {
@@ -112,6 +113,57 @@ body {
       rgb(222 100 16) 60%
     );
   transform: rotateX(80deg) rotateY(-10deg);
+  box-shadow: 0 10px 20px 20px rgb(0 0 0 / 20.7%);
+}
+
+.uranus {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(128 204 196) 20%,
+      rgb(174 237 227) 20%,
+      rgb(174 237 227) 25%,
+      rgb(71 198 179) 25%,
+      rgb(71 198 179) 30%,
+      rgb(120 206 195) 30%,
+      rgb(120 206 195) 60%,
+      rgb(71 198 179) 60%,
+      rgb(71 198 179) 70%,
+      rgb(123 205 195) 70%,
+      rgb(123 205 195) 80%,
+      rgb(89 181 176) 80%,
+      rgb(89 181 176) 90%,
+      rgb(177 233 224) 0
+    );
+}
+
+.neptune {
+  background-image:
+    radial-gradient(ellipse at 25% 45%, rgb(59 96 224) 10%, transparent 0),
+    linear-gradient(
+      -5deg,
+      rgb(59 96 224) 10%,
+      rgb(97 138 249) 10%,
+      rgb(97 138 249) 30%,
+      rgb(59 96 224) 30%,
+      rgb(59 96 224) 45%,
+      rgb(97 138 249) 45%,
+      rgb(97 138 249) 70%,
+      rgb(59 96 224) 70%,
+      rgb(59 96 224) 80%,
+      rgb(97 138 249) 80%
+    );
+}
+
+.pluto {
+  background-color: rgb(230 158 93);
+  background-image:
+    radial-gradient(circle at 8% 25%, rgb(253 220 161) 5%, transparent 5%),
+    radial-gradient(circle at 30% 70%, rgb(253 220 161) 10%, transparent 10%),
+    radial-gradient(circle at 60% 10%, rgb(253 220 161) 5%, transparent 5%),
+    radial-gradient(circle at 70% 70%, rgb(253 220 161) 3%, transparent 3%),
+    radial-gradient(circle at 80% 30%, rgb(253 220 161) 2%, transparent 2%),
+    radial-gradient(circle at 80% 51%, rgb(253 220 161) 4%, transparent 4%);
 }
 
 .face-container {
