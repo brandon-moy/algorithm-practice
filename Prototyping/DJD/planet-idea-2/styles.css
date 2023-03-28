@@ -135,6 +135,27 @@ body {
       rgb(89 181 176) 90%,
       rgb(177 233 224) 0
     );
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.uranus-ring {
+  position: absolute;
+  width: 170%;
+  top: -50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background-image:
+    radial-gradient(
+      circle at center,
+      transparent 40%,
+      rgb(64 115 106) 40%,
+      rgb(177 233 224) 43%,
+      rgb(177 233 224) 64%,
+      rgb(66 114 106) 98%
+    );
+  transform: rotateX(100deg);
+  box-shadow: 0 10px 20px 20px rgb(0 0 0 / 20.7%);
 }
 
 .neptune {
