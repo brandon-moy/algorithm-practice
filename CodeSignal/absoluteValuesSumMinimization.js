@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 function solution(a) {
+  if (!a.length) return null;
   let currentOutput = a[0]; // 2 * 1 = 0(2) ~= 0(1)
   let leastSum = absoluteValueSumForIndex(a, 0); // ? * 1 = 0(?) ~= 0(1)
   for (
@@ -25,4 +27,4 @@ function absoluteValueSumForIndex(array, index) {
 // Big O Notation: solution 0(n) linear time
 // Big O Notation: absoluteValueSumForIndex 0(n) linear time
 
-solution([1]);
+export { solution };
