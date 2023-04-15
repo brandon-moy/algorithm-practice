@@ -1,4 +1,4 @@
-function solution(matrix) {
+export default function matrixElementSum(matrix) {
   var output = 0; // 1 * 1 = 0(1)
   for (
     var i = 0; // 1 * 1 = 0(1)
@@ -21,7 +21,3 @@ function solution(matrix) {
 }
 
 // Big O Notation: 0(n^2) quadratic time
-
-solution([[0, 1, 1, 2],
-  [0, 5, 0, 0],
-  [2, 0, 3, 3]]);
