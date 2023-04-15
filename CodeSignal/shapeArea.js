@@ -1,6 +1,6 @@
 // Below we will define an n-interesting polygon. Your task is to find the area of a polygon for a given n.
 
-function solution(n) {
+export default function shapeArea(n) {
   if (n <= 1) { // 1 * 1 = 0(1)
     return 1; // 1 * 1 = 0(1)
   }
@@ -9,5 +9,3 @@ function solution(n) {
 }
 
 // Big O Notation 0(1) constant time
-
-solution(4);
