@@ -1,6 +1,7 @@
 // Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 
-function solution(inputArray) {
+export default function adjacentElementsProduct(inputArray) {
+  if (!inputArray.length) return null;
   var output = inputArray[0] * inputArray[1]; // 4 * 1 = 0(4) ~= 0(1)
   for (
     var i = 1; // 1 * 1 = 0(1)
@@ -20,5 +21,3 @@ function solution(inputArray) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution([1, 2, 3]);
