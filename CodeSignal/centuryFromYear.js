@@ -1,6 +1,7 @@
 // Given a year, return the century it is in.The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc.
 
-function solution(year) {
+export default function centuryFromYear(year) {
+  if (typeof year !== 'number') return null;
   var century = year / 100; // 2 * 1 = 0(1)
   var checkCentury = Math.floor(century); // 3 * 1 = 0(1)
   if (century === checkCentury) { // 3 * 1 = 0(1)
@@ -12,4 +13,4 @@ function solution(year) {
 
 // Big O Notation = 0(1) constant time
 
-solution(1994);
+centuryFromYear(1994);
