@@ -1,4 +1,5 @@
 export default function isLucky(n) {
+  if (typeof n !== 'number') return null;
   var string = n.toString(); // 2 * 1 = 0(2) ~= 0(1)
   var halfway = Math.floor(string.length / 2); // 4 * 1 = 0(4) ~= 0(1)
   var firstSum = 0; // 1 * 1 = 0(1)
