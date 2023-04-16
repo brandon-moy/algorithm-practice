@@ -1,6 +1,7 @@
 // Below we will define an n-interesting polygon. Your task is to find the area of a polygon for a given n.
 
 export default function shapeArea(n) {
+  if (typeof n !== 'number') return null;
   if (n <= 1) { // 1 * 1 = 0(1)
     return 1; // 1 * 1 = 0(1)
   }
