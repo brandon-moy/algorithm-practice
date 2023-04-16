@@ -2,7 +2,7 @@ import add from '../CodeSignal/add.js';
 import { expect } from 'chai';
 
 describe('Write a function that returns the sum of two numbers', () => {
-  it('Returns the sum 1 and 2', () => {
+  it('Returns the sum of positive integers', () => {
     const testOneParam1 = 1;
     const testOneParam2 = 2;
     const testOneResult = add(testOneParam1, testOneParam2);
@@ -11,7 +11,7 @@ describe('Write a function that returns the sum of two numbers', () => {
     expect(testOneResult).to.equal(3);
   });
 
-  it('Returns the sum on 0 and 1000', () => {
+  it('Returns the sum of integers including 0', () => {
     const testTwoParam1 = 0;
     const testTwoParam2 = 1000;
     const testTwoResult = add(testTwoParam1, testTwoParam2);
@@ -20,7 +20,7 @@ describe('Write a function that returns the sum of two numbers', () => {
     expect(testTwoResult).to.equal(1000);
   });
 
-  it('Returns the sum of 2 and -39', () => {
+  it('Returns the sum including a negative number', () => {
     const testThreeParam1 = 2;
     const testThreeParam2 = -39;
     const testThreeResult = add(testThreeParam1, testThreeParam2);
@@ -29,13 +29,13 @@ describe('Write a function that returns the sum of two numbers', () => {
     expect(testThreeResult).to.equal(-37);
   });
 
-  it('Returns the sum of 99 and 100', () => {
-    const testFourParam1 = 99;
-    const testFourParam2 = 100;
+  it('Returns the sum of large numbers', () => {
+    const testFourParam1 = 999;
+    const testFourParam2 = 1000;
     const testFourResult = add(testFourParam1, testFourParam2);
 
     expect(testFourResult).to.be.a('number');
-    expect(testFourResult).to.equal(199);
+    expect(testFourResult).to.equal(1999);
   });
 
   it('Returns null if param1 or param2 are not a number', () => {
