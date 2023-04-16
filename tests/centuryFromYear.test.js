@@ -2,7 +2,7 @@ import centuryFromYear from '../CodeSignal/centuryFromYear.js';
 import { expect } from 'chai';
 
 describe('Given a year, return the century it is in. The century spans from 1 to 100 before starting the next century.', () => {
-  it('Returns the correct century for the year 1905', () => {
+  it('Returns the correct century for a positive integer year', () => {
     const testOneYear = 1905;
     const testOneResult = centuryFromYear(testOneYear);
 
@@ -10,7 +10,7 @@ describe('Given a year, return the century it is in. The century spans from 1 to
     expect(testOneResult).to.equal(20);
   });
 
-  it('Returns the correct century for the year 1700', () => {
+  it('Returns the correct century for positive integer year', () => {
     const testTwoYear = 1700;
     const testTwoResult = centuryFromYear(testTwoYear);
 
@@ -18,12 +18,12 @@ describe('Given a year, return the century it is in. The century spans from 1 to
     expect(testTwoResult).to.equal(17);
   });
 
-  it('Returns the correct century for the year 1988', () => {
-    const testThreeYear = 1988;
+  it('Returns null if the input is a negative integer year', () => {
+    const testThreeYear = -1988;
     const testThreeResult = centuryFromYear(testThreeYear);
 
-    expect(testThreeResult).to.be.a('number');
-    expect(testThreeResult).to.equal(20);
+    expect(testThreeResult).to.be.a('null');
+    expect(testThreeResult).to.equal(null);
   });
 
   it('Returns null if the input is not a number', () => {
