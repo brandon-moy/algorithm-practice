@@ -2,7 +2,7 @@ import checkPalindrome from '../CodeSignal/checkPalindrome.js';
 import { expect } from 'chai';
 
 describe('Given a string, check if it is a palindrome (the same word spelled backwards)', () => {
-  it('Returns a true for the string aabaa', () => {
+  it('Returns a boolean if a string is or is not a palindrome', () => {
     const testOne = 'aabaa';
     const testOneResult = checkPalindrome(testOne);
 
@@ -10,7 +10,7 @@ describe('Given a string, check if it is a palindrome (the same word spelled bac
     expect(testOneResult).to.equal(true);
   });
 
-  it('Returns false for the string abac', () => {
+  it('Returns a boolean if a string is or is not a palindrome', () => {
     const testTwo = 'abac';
     const testTwoResult = checkPalindrome(testTwo);
 
@@ -18,7 +18,7 @@ describe('Given a string, check if it is a palindrome (the same word spelled bac
     expect(testTwoResult).to.equal(false);
   });
 
-  it('Returns true is the string is empty', () => {
+  it('Returns a boolean if a string is empty', () => {
     const testThree = '';
     const testThreeResult = checkPalindrome(testThree);
 
