@@ -1,4 +1,5 @@
-function solution(picture) {
+export default function addBorder(picture) {
+  if (!picture.length) return null;
   var length = picture[0].length; // 3 * 1 = 0(3) ~= 0(1)
   var borderPic = []; // 1 * 1 = 0(1)
   var border = ''; // 1 * 1 = 0(1)
@@ -21,10 +22,6 @@ function solution(picture) {
 
 // Big O Notation: 0(n) linear time
 
-var picture = ['abc',
-  'ded'];
-
-solution(picture);
 // find the length of the first item
 // length + 2 should be length of border
 // iterate through array and concatenate value of array position with '*' before and after
