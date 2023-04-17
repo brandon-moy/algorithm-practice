@@ -1,4 +1,5 @@
-function solution(inputArray) {
+export default function arrayChange(inputArray) {
+  if (!inputArray.length || typeof inputArray !== 'object') return null;
   var output = 0; // 1 * 1 = 0(1)
   for (
     let i = 0; // 1 * 1 = 0(1)
@@ -22,5 +23,3 @@ function solution(inputArray) {
 // while the nubmeri s < number in front of it continue to increment by 1
 // each time it is incremeneted add 1 to output
 // return output
-
-solution([1, 1, 1]);
