@@ -1,4 +1,5 @@
-function solution(a, b) {
+export default function areSimilar(a, b) {
+  if (!a.length || !b.length || typeof a !== 'object' || typeof b !== 'object') return null;
   const diff = []; // 1 * 1 = 0(1)
   for (
     var i = 0; // 1 * 1 = 0(1)
@@ -22,8 +23,6 @@ function solution(a, b) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution([1, 2, 3], [1, 2, 3]);
 
 // take two arrays
 // sort them
