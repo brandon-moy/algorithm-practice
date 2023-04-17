@@ -1,4 +1,4 @@
-function solution(sequence) {
+export default function almostIncreasingSequence(sequence) {
   let count = 0; // 1 * 1 = 0(1)
 
   for (
@@ -20,5 +20,3 @@ function solution(sequence) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution([1, 3, 2]);

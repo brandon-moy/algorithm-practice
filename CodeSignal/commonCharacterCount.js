@@ -1,4 +1,5 @@
-function solution(s1, s2) {
+export default function commonCharacterCount(s1, s2) {
+  if (typeof s1 !== 'string' || typeof s2 !== 'string') return null;
   var count = 0; // 1 * 1 = 0(1)
   var s1a = s1.split(''); // 3 * 1 = 0(3) ~= 0(1)
   var s2a = s2.split(''); // 3 * 1 = 0(3) ~= 0(1)
@@ -21,5 +22,3 @@ function solution(s1, s2) {
 }
 
 // Big O Notation: 0(n^2) quadratic time
-
-solution('aabca', 'adcaa');

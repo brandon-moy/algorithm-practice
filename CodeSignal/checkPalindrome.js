@@ -1,6 +1,7 @@
 // Given the string, check if it is a palindrome.
 
-function solution(inputString) {
+export default function checkPalindrome(inputString) {
+  if (typeof inputString !== 'string') return null;
   var inputNoSpace = ''; // 1 * 1 = 0(1)
   var reverseNoSpace = ''; // 1 * 1 = 0(1)
   for (
@@ -19,5 +20,3 @@ function solution(inputString) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution('bob');

@@ -1,4 +1,5 @@
-function solution(inputString) {
+export default function reverseInParentheses(inputString) {
+  if (typeof inputString !== 'string') return null;
   while (true) {
     var close = inputString.indexOf(')');
     if (close === -1) break;
@@ -10,5 +11,3 @@ function solution(inputString) {
   }
   return inputString;
 }
-
-solution('(bar)');

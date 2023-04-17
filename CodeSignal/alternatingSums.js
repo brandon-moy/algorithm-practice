@@ -1,4 +1,4 @@
-function solution(a) {
+export default function alternatingSums(a) {
   var output = []; // 1 * 1 = 0(1)
   var team1 = 0; // 1 * 1 = 0(1)
   var team2 = 0; // 1 * 1 = 0(1)
@@ -18,8 +18,6 @@ function solution(a) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution([50, 60, 60, 45, 70]);
 
 // take an array
 // create an output array
