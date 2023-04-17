@@ -1,4 +1,5 @@
-function solution(inputString) {
+export default function palindromeRearranging(inputString) {
+  if (!inputString.length) return null;
   const arrStr = inputString.split('').sort(); // 3 * 1 = 0(3) ~= 0(1)
   let count = 0; // 1 * 1 = 0(1)
   let i = 0; // 1 * 1 = 0(1)
@@ -12,5 +13,3 @@ function solution(inputString) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution('aabb');
