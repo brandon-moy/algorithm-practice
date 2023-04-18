@@ -1,4 +1,4 @@
-function solution(matrix) {
+export default function minesweeper(matrix) {
   const output = []; // 1 * 1 = 0(1)
 
   for (
@@ -44,5 +44,3 @@ function solution(matrix) {
   }
   return output; // 1 * 1 = 0(1)
 }
-
-solution([[true, false, false], [false, true, false], [false, false, false]]);
