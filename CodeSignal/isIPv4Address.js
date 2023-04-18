@@ -1,4 +1,5 @@
-function solution(inputString) {
+export default function isIPv4Address(inputString) {
+  if (typeof inputString !== 'string') return null;
   const arr = inputString.split('.');
   if (arr.length !== 4) return false;
   for (let i = 0; i < arr.length; i++) {
@@ -14,5 +15,3 @@ function solution(inputString) {
   }
   return true;
 }
-
-solution('0000000');
