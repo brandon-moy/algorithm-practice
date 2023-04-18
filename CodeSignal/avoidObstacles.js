@@ -1,4 +1,4 @@
-function solution(inputArray) {
+export default function avoidObstacles(inputArray) {
 
   var jump = 1; // 1 * 1 = 0(1)
   var valid = true; // 1 * 1 = 0(1)
@@ -20,5 +20,3 @@ function solution(inputArray) {
 }
 
 // Big O Notation: 0(n^2) quadratic time
-
-solution([0, 0]);
