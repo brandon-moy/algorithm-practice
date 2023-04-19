@@ -1,4 +1,4 @@
-function solution(name) {
+function variableName(name) {
   const nameArray = name.split('');
   for (let i = 0; i < nameArray.length; i++) {
     if (i === 0 && isDigit(nameArray[i])) {
@@ -18,7 +18,8 @@ function isUnderscore(char) {
 }
 
 function isLetter(char) {
+  if (typeof char !== 'string' || !char) return false;
   return char.toLowerCase() !== char.toUpperCase();
 }
 
-solution('2w2');
+export { variableName, isDigit, isUnderscore, isLetter };
