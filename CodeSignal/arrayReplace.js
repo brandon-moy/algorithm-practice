@@ -1,4 +1,4 @@
-function solution(inputArray, elemToReplace, substitutionElem) {
+export default function arrayReplace(inputArray, elemToReplace, substitutionElem) {
   for (
     let i = 0; // 1 * 1 = 0(1)
     i < inputArray.length; // 2 * n = 0(2n) ~= 0(n)
@@ -11,5 +11,3 @@ function solution(inputArray, elemToReplace, substitutionElem) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution([1, 2, 3], 1, 3);
