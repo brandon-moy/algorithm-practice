@@ -1,4 +1,6 @@
 function variableName(name) {
+  if (typeof name !== 'string') return null;
+  if (!name.length) return false;
   const nameArray = name.split('');
   for (let i = 0; i < nameArray.length; i++) {
     if (i === 0 && isDigit(nameArray[i])) {
