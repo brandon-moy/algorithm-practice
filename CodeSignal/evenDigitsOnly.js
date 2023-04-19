@@ -1,4 +1,5 @@
-function solution(n) {
+export default function evenDigitsOnly(n) {
+  if (!n && n !== 0) return null;
   const string = n.toString(); // 3 * 1 = 0(3) ~= 0(1)
   for (
     let i = 0; // 1 * 1 = 0(1)
@@ -12,5 +13,3 @@ function solution(n) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution(62236);
