@@ -1,4 +1,5 @@
-function solution(inputString) {
+export default function alphabeticShift(inputString) {
+  if (typeof inputString !== 'string') return null;
   const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']; // 1 * 1 = 0(1)
   let output = ''; // 1 * 1 = 0(1)
   for (
@@ -15,5 +16,3 @@ function solution(inputString) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution('crazy');
