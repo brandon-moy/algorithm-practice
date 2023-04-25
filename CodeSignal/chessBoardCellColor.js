@@ -1,4 +1,5 @@
-function solution(cell1, cell2) {
+export default function chessBoardCellColor(cell1, cell2) {
+  if (typeof cell1 !== 'string' | typeof cell2 !== 'string') return null;
   const group1 = ['A', 'C', 'E', 'G']; // 1 * 1 = 0(1)
   let cell1color = ''; // 1 * 1 = 0(1)
   let cell2color = ''; // 1 * 1 = 0(1)
@@ -35,5 +36,3 @@ function solution(cell1, cell2) {
 }
 
 // Big O Notation: 0(1) constant time
-
-solution('A1', 'H3');
