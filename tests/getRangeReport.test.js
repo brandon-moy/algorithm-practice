@@ -20,17 +20,16 @@ describe('Define a function with two parameters start and end, it should return 
     expect(testOneResult.average).to.be.a('number');
   });
 
-  // it('Returns an object with the defined properties for clsoe numbers', () => {
-  //   const testTwoParam1 = 1;
-  //   const testTwoParam2 = 2;
-  //   const testTwoResult = getRangeReport(testTwoParam1, testTwoParam2);
+  it('Returns an object with the defined properties for close numbers', () => {
+    const testTwoParam1 = 1;
+    const testTwoParam2 = 2;
+    const testTwoResult = getRangeReport(testTwoParam1, testTwoParam2);
 
-  //   expect(testTwoResult.totall).to.be.a('number');
-  //   expect(testTwoResult.total).to.equal(6);
-  //   expect(testTwoResult.odds).to.be.an('array');
-  //   expect(testTwoResult).to.be.an('object');
-  //   expect(testTwoResult.evens).to.be.an('array');
-  //   expect(testTwoResult.range).to.be.an('array');
-  //   expect(testTwoResult).to.be.an('object');
-  // })
+    expect(testTwoResult.total).to.equal(3);
+    expect(testTwoResult.odds).to.have.members([1]);
+    expect(testTwoResult.evens).to.have.members([2]);
+    expect(testTwoResult.range).to.have.members([1, 2]);
+    expect(testTwoResult.average).to.equal(1.5);
+  });
+
 });
