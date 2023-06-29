@@ -1,4 +1,4 @@
-function solution(deposit, rate, threshold) {
+export default function depositProfit(deposit, rate, threshold) {
   let growth = deposit; // 2 * 1 = 0(3) ~= 0(1)
   const realRate = 1 + (rate / 100); // 4 * 1 = 0(4) ~= 0(1)
   let years = 0; // 1 * 1 = 0(1)
@@ -10,5 +10,3 @@ function solution(deposit, rate, threshold) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution(100, 20, 170);
