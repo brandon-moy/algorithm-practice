@@ -1,4 +1,4 @@
-function solution(n, firstNumber) {
+export default function circleOfNumbers(n, firstNumber) {
   const half = n / 2; // 3 * 1 = 0(3) ~= 0(1)
   let across = firstNumber + half; // 4 * 1 = 0(4) ~= 0(1)
   if (across > n) { // 3 * 1 = 0(3) ~= 0(1)
@@ -10,5 +10,3 @@ function solution(n, firstNumber) {
 }
 
 // Big O Notation: 0(1) constant time
-
-solution(10, 2);
