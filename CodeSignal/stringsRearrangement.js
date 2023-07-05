@@ -1,4 +1,5 @@
-function solution(inputArray) {
+export default function stringsRearrangement(inputArray) {
+  if (!inputArray.length) return null;
   let result = false;
 
   function check(array) {
@@ -35,5 +36,3 @@ function solution(inputArray) {
   result = loopArray(inputArray, []);
   return result;
 }
-
-solution(['q', 'q']);
