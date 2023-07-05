@@ -1,4 +1,5 @@
-function solution(inputArray, k) {
+export default function extractEachKth(inputArray, k) {
+  if (!inputArray.length) return null;
   var count = 1; // 1 * 1 = 0(1)
   for (
     var i = 0; // 1 * 1 = 0(1)
@@ -14,5 +15,3 @@ function solution(inputArray, k) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution([1, 2, 3, 4], 4);
