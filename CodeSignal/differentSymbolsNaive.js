@@ -1,4 +1,4 @@
-function solution(s) {
+export default function differentSymbolsNaive(s) {
   let count = 1; // 1 * 1 = 0(1)
   const characters = [s[0]]; // 2 * 1 = 0(2) ~= 0(1)
   for (
@@ -14,5 +14,3 @@ function solution(s) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution('cabac');
