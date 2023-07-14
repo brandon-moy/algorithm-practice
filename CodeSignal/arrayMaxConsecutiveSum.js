@@ -1,4 +1,5 @@
-function solution(inputArray, k) {
+export default function arrayMaxConsecutiveSum(inputArray, k) {
+  if (!inputArray.length) return null;
   let result = 0; // 1 * 1 = 0(1)
   let currentSum = 0; // 1 * 1 = 0(1)
   for (
@@ -21,5 +22,3 @@ function solution(inputArray, k) {
 }
 
 // Big O Notation: 0(n) linear time
-
-solution([1, 2, 3, 4], 2);
